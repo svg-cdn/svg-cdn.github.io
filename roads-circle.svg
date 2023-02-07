@@ -23,7 +23,7 @@
             <use href="#c1" />
         </clipPath>
     </defs>
-    <g transform="translate(-348 -114)" id="cirkel">
+    <g transform="translate(-348 -114)" id="circle">
         <use href="#c1" fill="url(#a)" />
         <rect x="230" y="80" clip-path="url(#d)" fill="url(#b)" width="385" height="80" />
         <g clip-path="url(#d)" fill="#ffffff">
