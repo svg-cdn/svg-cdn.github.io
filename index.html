@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://file-size.github.io/element.js"></script>
+    <script src="https://load-file.github.io/element.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        show-svg{
+            display:inline-block;
+            background:beige;
+            padding:1em;
+            margin:1em;
+        }
+        summary {
+            font-size: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <show-svg src="animate_repeat_circle_on_path.svg"></show-svg>
+    <show-svg src="bi-arrows.svg"></show-svg>
+    <show-svg src="black_king.svg"></show-svg>
+    <show-svg src="blue.svg"></show-svg>
+    <show-svg src="christmasbells.svg"></show-svg>
+    <show-svg src="floorplan.svg"></show-svg>
+    <show-svg src="heart.svg"></show-svg>
+    <show-svg src="joker-card.svg"></show-svg>
+    <show-svg src="logo_id.svg"></show-svg>
+    <show-svg src="map-australia.svg"></show-svg>
+    <show-svg src="map-marker-bus.svg"></show-svg>
+    <show-svg src="map-marker-house.svg"></show-svg>
+    <show-svg src="map-marker.svg"></show-svg>
+    <show-svg src="map-usa.svg"></show-svg>
+    <show-svg src="red.svg"></show-svg>
+    <show-svg src="roads-circle.svg"></show-svg>
+    <show-svg src="roads-logo.svg"></show-svg>
+    <show-svg src="simple-worldmap.svg"></show-svg>
+    <show-svg src="stroke-dash-array.svg"></show-svg>
+
+    <script>
+        customElements.define("show-svg", class extends HTMLElement {
+            connectedCallback() {
+                let src = this.getAttribute("src");
+                let file = "https://svg-cdn.github.io/" + src;
+                this.innerHTML =
+                    `<file-size src="${file}"></file-size>` +
+                    `<load-file src="${file}">` +
+                    `<style shadowRoot>svg{max-width:var(--size,100px)}</style>` +
+                    `</load-file>`;
+            }
+        })
+    </script>
+</body>
+
+</html>

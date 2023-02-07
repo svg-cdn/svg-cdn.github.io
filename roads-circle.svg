@@ -1,37 +1,36 @@
-<svg viewbox="0 0 146 146" style="background:white">
-    <g transform="translate(-348 -114)">
-        <defs>
-            <circle id="circle" cx="421" cy="187" r="72" />
-            <radialGradient id="a" cx="449" cy="135" r="82"
-                gradientTransform="matrix(0.66 0.75 1.05 -0.92 10.28 -48.72)" gradientUnits="userSpaceOnUse">
-                <stop offset="0.0" stop-color="#ffffff" />
-                <stop offset="0.5" stop-color="#dedc00" />
-                <stop offset="1.0" stop-color="#6cb52d" />
-            </radialGradient>
-            <radialGradient id="b" cx="311" cy="77" r="89" gradientTransform="matrix(0.93 0 0 0.52 154.28 119.28)"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0.0" stop-color="#ffffff" />
-                <stop offset="0.5" stop-color="#a2daf8" />
-                <stop offset="1.0" stop-color="#009fe3" />
-            </radialGradient>
-            <radialGradient id="c" cx="671" cy="1322" r="99"
-                gradientTransform="matrix(0.93 0.36 -0.36 0.93 291.9 -1309.1)" gradientUnits="userSpaceOnUse">
-                <stop offset="0.0" stop-color="#ffffff" />
-                <stop offset="0.5" stop-color="#c8ead1" />
-                <stop offset="1.0" stop-color="#13a538" />
-            </radialGradient>
-            <clipPath id="d">
-                <use href="#circle" />
-            </clipPath>
-        </defs>
-        <use href="#circle" fill="url(#a)" />
-        <rect x="348" y="114" clip-path="url(#d)" fill="url(#b)" width="146" height="46" />
+<svg viewBox="0 0 146 146">
+    <defs>
+        <circle id="c1" cx="421" cy="187" r="72" />
+        <radialGradient r="82" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.66 0.75 1.05 -0.9 10 -48.7)"
+            id="a" cx="449" cy="135">
+            <stop offset="0.0" stop-color="#ffffff" />
+            <stop offset="0.5" stop-color="#dedc00" />
+            <stop offset="1.0" stop-color="#6cb52d" />
+        </radialGradient>
+        <radialGradient r="82" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.93 0 0 0.5 154.3 119.3)"
+            id="b" cx="311" cy="77">
+            <stop offset="0.0" stop-color="#ffffff" />
+            <stop offset="0.5" stop-color="#a2daf8" />
+            <stop offset="1.0" stop-color="#009fe3" />
+        </radialGradient>
+        <radialGradient r="82" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.93 0.36 -0.36 0.93 292 -1309)"
+            id="c" cx="671" cy="1322">
+            <stop offset="0.0" stop-color="#ffffff" />
+            <stop offset="0.5" stop-color="#c8ead1" />
+            <stop offset="1.0" stop-color="#13a538" />
+        </radialGradient>
+        <clipPath id="d">
+            <use href="#c1" />
+        </clipPath>
+    </defs>
+    <g transform="translate(-348 -114)" id="cirkel">
+        <use href="#c1" fill="url(#a)" />
+        <rect x="230" y="80" clip-path="url(#d)" fill="url(#b)" width="385" height="80" />
         <g clip-path="url(#d)" fill="#ffffff">
-            <polygon opacity="0.7" fill="url(#c)" points="396 295 283 234 449 160" />
+            <polygon points="396 295 283 234 449 160" opacity="0.7" fill="url(#c)" />
             <polygon points="449 259 451 165 496 207 453 163 492 161 454 159 445 159 338 160 445 162 
-			371 239 448 165" />
-            <polygon points="480 230 454 165 494 178 455 160 478 147 453 157 462 127 449 155 429 114 
+			371 239 448 165 480 230 454 165 494 178 455 160 478 147 453 157 462 127 449 155 429 114 
 			445 156 369 129 444 161 348 205 445 165 409 264 449 166" />
         </g>
-        </g>
+    </g>
 </svg>
