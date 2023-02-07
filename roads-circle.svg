@@ -8,7 +8,7 @@
             <stop offset="1.0" stop-color="#6cb52d" />
         </radialGradient>
         <radialGradient r="82" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.93 0 0 0.5 154.3 119.3)"
-            id="b" cx="311" cy="77">
+            id="f" cx="311" cy="77">
             <stop offset="0.0" stop-color="#ffffff" />
             <stop offset="0.5" stop-color="#a2daf8" />
             <stop offset="1.0" stop-color="#009fe3" />
@@ -25,7 +25,7 @@
     </defs>
     <g transform="translate(-348 -114)" id="circle">
         <use href="#c1" fill="url(#a)" />
-        <rect x="230" y="80" clip-path="url(#d)" fill="url(#b)" width="385" height="80" />
+        <rect x="230" y="80" clip-path="url(#d)" fill="url(#f)" width="385" height="80" />
         <g clip-path="url(#d)" fill="#ffffff">
             <polygon points="396 295 283 234 449 160" opacity="0.7" fill="url(#c)" />
             <polygon points="449 259 451 165 496 207 453 163 492 161 454 159 445 159 338 160 445 162 
