@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-120 -167 240 334'>
+    <rect width='239' height='333' x='-119.5' y='-166.5' rx='12' ry='12' stroke='#444' fill='#FEFEFE' fill-opacity='1'
+        stroke-width='1'></rect>
+    <filter id='SH'>
+        <feDropShadow dx='5' dy='5' stdDeviation='5' />
+    </filter>
+    <pattern patternUnits='userSpaceOnUse' id='A' width='10' height='10'>
+        <path d='M5 0L10 5L5 10L0 5Z' fill='#E55' fill-opacity='1'></path>
+    </pattern>
+    <rect width='216' height='310' x='-108' y='-155' rx='12' ry='12' fill='url(#A)' fill-opacity='1'></rect>
+    <text x='0' y='10' stroke='' text-anchor='middle' transform='rotate(45 0 0)' opacity='.7'
+        style='font-weight:700;font-family:Arial;letter-spacing:2px;fill:#555;stroke:none;font-size:36px;'>CARDMEISTER</text>
+</svg>

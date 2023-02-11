@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 278" xmlns="http://www.w3.org/2000/svg"
+    style="background:hotpink;rotate3d(10deg);padding:1em;width:400px">
+    <defs>
+        <pattern id="card" x="0" y="0" width="200" height="278" patternUnits="userSpaceOnUse">
+            <image x="0" y="0" width="200" height="278" xlink:href="https://svg-cdn.github.io/hearts-king.svg"></image>
+        </pattern>
+        <clipPath id="corner">
+            <path d="M1 278v-50h50v50z" stroke="blue" />
+        </clipPath>
+    </defs>
+    <rect x="0" y="0" width="200" height="278" fill="url(#card)"> </rect>
+    <g clip-path="url(#corner)" transform="translate(50 50) rotate(45 100 139)" fill="pink">
+        <rect x="0" y="0" width="200" height="278" fill="url(#card)" transform="scale(-1 1)"
+            transform-origin="100 139" />
+    </g>
+</svg>
