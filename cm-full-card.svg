@@ -1,16 +1,27 @@
-<svg viewBox="0 0 200 278" xmlns="http://www.w3.org/2000/svg"
-    style="background:hotpink;rotate3d(10deg);padding:1em;width:400px">
+<svg viewBox="0 0 200 278" xmlns="http://www.w3.org/2000/svg" style="background:hotpink;padding:1em;height:180px">
     <defs>
-        <pattern id="card" x="0" y="0" width="200" height="278" patternUnits="userSpaceOnUse">
-            <image x="0" y="0" width="200" height="278" xlink:href="https://svg-cdn.github.io/hearts-king.svg"></image>
+        <pattern id="back" x="0" y="0" width="200" height="278" patternUnits="userSpaceOnUse">
+            <image x="0" y="0" width="200" height="278" href="https://svg-cdn.github.io/cm-back-red.svg" />
         </pattern>
-        <clipPath id="corner">
-            <path d="M1 278v-50h50v50z" stroke="blue" />
+        <pattern id="front" x="0" y="0" width="200" height="278" patternUnits="userSpaceOnUse">
+            <image x="0" y="0" width="200" height="278" href="https://svg-cdn.github.io/cm-hearts-king.svg" />
+        </pattern>
+        <clipPath id="foldcorner">
+            <path d="M1 153v120h120z" />
+        </clipPath>
+        <clipPath id="clippedcard">
+            <path d="M0 179L0 0h200v278h-57z" />
         </clipPath>
     </defs>
-    <rect x="0" y="0" width="200" height="278" fill="url(#card)"> </rect>
-    <g clip-path="url(#corner)" transform="translate(50 50) rotate(45 100 139)" fill="pink">
-        <rect x="0" y="0" width="200" height="278" fill="url(#card)" transform="scale(-1 1)"
-            transform-origin="100 139" />
+    <g clip-path="url(#clippedcard)">
+        <rect id="card" x="0" y="0" width="200" height="278" fill="url(#back)" />
+    </g>
+    <g opacity="1">
+        <g id="corner" clip-path="url(#foldcorner)" transform="translate(-55 169) rotate(170 100 139)">
+            <rect x="0" y="0" width="200" height="278" fill="url(#front)" transform="scale(-1 1)"
+                transform-origin="100 139" />
+        </g>
+        <path id="corneredge" d="M0 179l141 99l-23 -119z" stroke-width="2" stroke="black" fill="none" opacity=".4"/>
     </g>
 </svg>
+<!-- How to apply a dropshadow on the clip-path -->
