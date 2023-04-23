@@ -1,0 +1,27 @@
+<svg viewBox="0 0 500 100" style="background:pink">
+    <style>
+        #H1 {
+            stroke: #ba8cde;
+        }
+
+        textPath {
+            font-size: 90px;
+            font-weight: 400;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
+        path {
+            d: path("M0 50h500");
+            stroke-width: 100;
+        }
+    </style>
+    <path id="H1" fill="none" pathLength="100" />
+    <path id="H2" stroke="none" fill="none" pathLength="100" />
+    <text>
+        <textPath fill="lightgrey" href="#H2" startoffset="50.25">Software</textPath>
+    </text>
+    <text>
+        <textPath fill="black" href="#H1" startoffset="50">Software</textPath>
+    </text>
+</svg>

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>File Transfer</title>
+    <style>
+        body {
+            max-width: 700px;
+            margin: 0 auto;
+            font: 16px arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Load external SVG with SMIL animation</h1>
+    When using &lt;img> or &lt;object> tags to load an external SVG file, <code>animateMotion</code> does not work, use <code>animateTransform</code> instead
+    <p>If you require full SMIL capabilities, load the <b>external</b> SVG with the <a href="https://load-file.github.io">&lt;load-file> Web Component</a> and have it injected into the DOM</p>
+    <h3>IMG tag</h3>
+    <img src="filetransfer.svg">
+    <h3>OBJECT tag</h3>
+    <object data="filetransfer.svg" type="image/svg+xml"></object>
+</body>
+
+</html>

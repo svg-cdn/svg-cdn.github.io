@@ -1,27 +1,18 @@
-<svg viewBox="0 0 200 278" xmlns="http://www.w3.org/2000/svg" style="background:hotpink;padding:1em;height:180px">
+<svg viewBox="0 0 200 278" style="height:180px">
     <defs>
-        <pattern id="back" x="0" y="0" width="200" height="278" patternUnits="userSpaceOnUse">
-            <image x="0" y="0" width="200" height="278" href="https://svg-cdn.github.io/cm-back-red.svg" />
+        <pattern id="back" width="200" height="278" patternUnits="userSpaceOnUse">
+            <image width="200" height="278" href="https://svg-cdn.github.io/cm-back-red.svg" />
         </pattern>
-        <pattern id="front" x="0" y="0" width="200" height="278" patternUnits="userSpaceOnUse">
-            <image x="0" y="0" width="200" height="278" href="https://svg-cdn.github.io/cm-hearts-king.svg" />
+        <pattern id="front" width="200" height="278" patternUnits="userSpaceOnUse">
+            <image width="200" height="278" href="https://svg-cdn.github.io/cm-hearts-king.svg" />
         </pattern>
-        <clipPath id="foldcorner">
-            <path d="M1 153v120h120z" />
-        </clipPath>
-        <clipPath id="clippedcard">
-            <path d="M0 179L0 0h200v278h-57z" />
+        <clipPath id="clip">
+            <path d="M0 178L0 0h200v278h-59z" />
         </clipPath>
     </defs>
-    <g clip-path="url(#clippedcard)">
-        <rect id="card" x="0" y="0" width="200" height="278" fill="url(#back)" />
-    </g>
-    <g opacity="1">
-        <g id="corner" clip-path="url(#foldcorner)" transform="translate(-55 169) rotate(170 100 139)">
-            <rect x="0" y="0" width="200" height="278" fill="url(#front)" transform="scale(-1 1)"
-                transform-origin="100 139" />
-        </g>
-        <path id="corneredge" d="M0 179l141 99l-23 -119z" stroke-width="2" stroke="black" fill="none" opacity=".4"/>
+    <g clip-path="url(#clip)">
+        <rect width="200" height="278" fill="url(#back)" />
+        <rect width="200" height="278" fill="url(#front)" 
+              transform="translate(-100 139) rotate(-100 100 139)" />
     </g>
 </svg>
-<!-- How to apply a dropshadow on the clip-path -->
