@@ -1,0 +1,9 @@
+<svg height="27" viewBox="0 0 240 240">
+    <g fill="#fff">
+        <path
+            d="m52 103a70 70 90 0168-53h97a120 120 90 00-195 1l30 52zm177-33h-60a70 70 90 0112 85l0 0-49 84a120 120 90 0097-169zm-90 117a70 70 90 01-80-32l0 0-49-84a120 120 90 0098 169l30-52z" />
+        <circle cx="120" cy="120" r="50" />
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 120 120" to="360 120 120"
+            begin="click" dur="9s" repeatCount="indefinite" />
+    </g>
+</svg>
